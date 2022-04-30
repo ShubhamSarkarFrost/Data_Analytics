@@ -46,7 +46,48 @@ class(daytype_7)
 # how to access a particular element 1 - using the key  2 - using the index
 weekday_7[1]
 weekday_7[c(1,3)]
+# First and the third item 
 weekday_7[1:3]
+
+# How to Create a blank character vector 
+char_vec <- character(10)
+char_vec
+class(char_vec)
+object.size(char_vec) #232 bytes
+
+#how to create a numeric blank vector
+num_vec <- numeric(10)
+num_vec
+class(num_vec)
+object.size(num_vec)    #176 bytes
+
+#how to create a Integer blank vector 
+int_vec <- integer(10)
+int_vec
+class(int_vec)
+object.size(int_vec)  #96 bytes
+
+
+#how to create a logical blank vector 
+log_vec <- logical(10)
+log_vec
+class(log_vec)
+object.size(log_vec) # 96 bytes
+
+# how to combine vector 
+
+combine_vec <- c(date_7,weekday_7,sales_7,discount_7)
+combine_vec
+class(combine_vec) #character vector 
+
+
+
+
+
+
+
+
+
 
 
 
