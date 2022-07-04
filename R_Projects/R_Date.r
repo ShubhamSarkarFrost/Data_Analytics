@@ -16,3 +16,7 @@ mydate2
 #To Add TimeZone 
 mydate2 <- strptime('1970-31-01', format = "%Y-%d-%m", tz= 'UTC')
 mydate2
+
+#To Convert Date to a String - strftime()
+mydatestring <- strftime(x=mydate2, format = '%B %d, %Y')
+mydatestring
