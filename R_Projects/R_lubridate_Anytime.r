@@ -35,3 +35,26 @@ d4
 #Operations possible on Dates Now 
 nextday <- d4 + 1
 nextday
+
+#Operations between Date 
+receipt_date <- mdy("6-07-2016")
+shipped_date <- mdy("5-24-2016")
+ordered_date <- mdy("5-14-2016")
+
+transpotation_lead_time <- receipt_date - shipped_date
+transpotation_lead_time
+
+total_lead_time <- receipt_date - ordered_date
+total_lead_time
+
+#Class of the above object will be difftime 
+class(total_lead_time)
+#Convert Difftime into numeric value
+as.numeric(total_lead_time)
+
+# Difftime - an alternate function in anytime package to find the difference between time 
+difftime(receipt_date,shipped_date,unit="sec")
+difftime(receipt_date,shipped_date,unit="week")
+
+
+
