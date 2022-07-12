@@ -41,4 +41,13 @@ m2
 #Get the 4th element 
 m2[4]
 
+#List Inside a List
+countries <- c("China","UK","USA","France","Greece","Spain","Italy")
+n <- list(countries,m)
+n
+
+#Go to the Correct Item
+extract_data <- n[[2]][[1]][4]
+extract_data
+
 
