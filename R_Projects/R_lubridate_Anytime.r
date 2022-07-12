@@ -56,5 +56,26 @@ as.numeric(total_lead_time)
 difftime(receipt_date,shipped_date,unit="sec")
 difftime(receipt_date,shipped_date,unit="week")
 
+#Given a date , extract the Day of the month , month of the year etc .
+
+day(receipt_date) # the 7th Day of the Month 
+month(receipt_date) # Falls on the 6 month of the year 
+months(receipt_date) # if you want month in characters 
+week(receipt_date) #Falls on the 23th week 
+weekdays(receipt_date) # its a Friday 
+quater(receipt_date) # falls on 4th quaters
+quaters(receipt_date) #alternative format for quater 
+year(receipt_date) #find year 
+
+install.packages('Hmisc')
+library(Hmisc)
+#no of days in any given month 
+monthDays(receipt_date)
+#no of days in any given year 
+yearDays(receipt_date)
+
+
+
+
 
 
